@@ -1,0 +1,174 @@
+a{
+	text-decoration:none;
+}
+.head{
+	width:100%;
+	height:50px;
+	border:1px solid none;
+	padding:20px;
+	background-color:teal;
+	margin:0;
+}
+.h1 a{
+	color:white;
+}
+.h1 a:hover{
+	text-shadow:12px 2px 3px pink;
+}
+.footer{
+ 
+	width:100%;
+	height:30px;
+	text-align:center;
+	padding:4px;
+	background-color:teal;
+	color:white;
+}
+nav{
+	width:100%;
+	background-color:tan;
+	height:35px;
+	margin:0;
+	padding:10px;
+}
+ul{
+	list-style-type:none;
+}
+.u li{
+	display:inline;
+}
+.u a{
+	text-align:center;
+	font-size:1.5em;
+	margin-right:15px;
+	color:black;
+	font-weight:bold;
+}
+.u a:hover{
+	color:deeppink;
+}
+.left{
+	float:left;
+	margin:0;
+}
+.left a{
+	display:block;
+	width:150px;
+	height:20px;
+	margin:0;
+	padding:5px;
+	color:black;
+	background-color:peru;
+	text-align:center;
+	font-weight:bold;
+	border:1px solid RosyBrown ;
+}
+.left a:hover{
+	background-color:SaddleBrown ;
+}
+.right{
+	float:left;
+	background-color:FloralWhite ;
+	width:70%;
+	height:auto;
+	border-left:3px solid white;
+	margin-top:15px;
+	padding:10px;
+}
+h2{
+	color:red;
+	font-weight:bold;
+}
+h3{
+	color:blue;
+}
+h4{
+	color:deeppink;
+}
+input.ng-invalid{
+	background-color:lightpink;
+	
+}
+table,th,td{
+	border:3px solid pink;
+	border-collapse:collapse;
+	padding:10px;
+}
+table tr:nth-child(odd){
+	background-color:lightpink;
+}
+table tr:nth-child(even){
+	background-color:pink;
+}
+table tr:hover{
+	background-color:deeppink;
+}
+
+.check{
+	transition: all linear 0.5s;
+	background-color:lightblue;
+	width:300px;
+	height:100px;	
+}
+.ng-hide{
+	height:0;
+}
+.note{
+	font-weight:bold;
+	font-size:2em;
+	text-shadow:4px 5px 3px deeppink;
+	color:white;
+}
+.book{
+	background-color:darkcyan;
+	width:520px;
+	padding:20px;
+	color:white;
+}
+.listInput{
+	width:300px;
+	height:30px;
+	padding:3px;
+	border-radius:10px;
+	box-shadow:2px 3px 2px lightpink;
+	
+}
+.listButton{
+	width:50px;
+	height:50px;
+	margin:0;
+	border-radius:36px;
+	box-shadow:5px 4px 4px darkcyan;
+}
+
+.list li{
+	display:block;
+	width:300px;
+	height:30px;
+	padding:5px;
+	background-color:lightgray;
+	border-bottom:1px solid gray;
+	box-shadow:3px 3px 6px 1px cyan;
+	border-radius:10px;
+}
+.listSpan{
+	color:white;
+	padding-left:210px;
+	font-size:1.5em;
+}
+.listSpan:hover{
+	color:darkgray;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+

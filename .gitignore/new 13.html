@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>练习</title>
+<link rel="stylesheet" href="c13.css" />
+<script src="https://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--添加angular库-->
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script type="text/javascript" src="JS13.js"></script>
+<!--引入angular动画效果-->
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+</head>
+
+
+<body>
+<div class="head">
+<div class="h1">
+<a href="" class="a1" style="font-size:2.5em">练习</a>
+</div>
+
+
+</div>
+
+<nav>
+ <ul class="u">
+<li class="l"><a href="" class="a2">HTML</a></li>
+<li class="l"><a href="" class="a2">CSS</a> </li>
+<li class="l"><a href="" class="a2">JS</a> </li>
+<li class="l"><a href="" class="a2">JQUERY</a></li>
+<li class="l"><a href="" class="a2">BOOTSTRAP</a></li>
+<li class="l"><a href="" class="a2">SQL</a></li>
+<li class="l"><a href="" class="a2">PHP</a></li>
+</ul>
+</nav>
+
+
+
+<div class="center" style="clear:both">
+<div class="left">
+<ul>
+<li><a href="" style="font-size:2em;height:35px">导航栏</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%201.html?">
+HTML事件</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%202.html"
+>
+HTML画布</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%203.html"
+>HTML音频、视频
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%204.html"
+>CSS
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%205.html"
+>CSS3
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%206.html"
+>
+响应式设计
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%207.html"
+>JS
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%208.html"
+>HTML5
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%209.html"
+>JQUERY
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%2010.html"
+>BOOTSTRAP</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%2011.html"
+>JS
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%2012.html"
+>React
+</a></li>
+<li><a href="file:///C:/Users/Administrator/Desktop/HTML/new%2013.html"
+style="color:red">Angular JS
+</a></li>
+
+
+</ul>
+</div>
+
+<div class="right"> 
+<h1>Angular JS组成：view(视图),model(模型),controller(控制器)</h1>
+<h2>ng-app,ng-controller,ng-model,ng-init,ng-repeat,scope</h2>
+<h3>创建自定义的指令
+ 元素名; 
+ 属性; 
+ 类名;
+ 注释 
+</h3>
+<p>自定义指令</p>
+
+<h4>根作用域$rootScope.用rootScope定义的值，可以在各个controller中使用</h4>
+<h4>创建自定义的服务:app.service()</h4>
+<h3>$http用于读取远程服务器的数据</h3>
+<h3>select</h3>
+<h4>ng-options</h4>
+<p>或者：ng-repeat</p>
+<p>ng-repeat选择的是一个字符串；ng-options选择的是一个对象</p>
+<h3>HTML DOM:ng-disabled,ng-show,ng-hide</h3>
+<h3>JS事件：ng-click</h3>
+<h3>创建模块--添加控制器--添加指令</h3>
+<textarea name="" id="" cols="70" rows="5">
+var app=angular.module("myApp",[]);
+app.controller("myCtr",function($scope){});
+app.directive("myDirective",function(){});
+
+</textarea>
+<h3>Bootstrap</h3>
+<h3>包含</h3>
+<h3>动画</h3>
+<h3>依赖注入</h3>
+<h2>value,provider,factory,service,constant</h2>
+<h3>路由</h3>
+
+<div ng-app="myApp" ng-controller="myCtrl"
+data-ng-init="firstname='Rose'"
+>
+
+<p>输入一个数字: <input type = "number" ng-model = "number" /></p>
+<button ng-click = "square()">X<sup>2</sup></button>
+<p>结果: {{result}}</p>
+
+
+<h1>实例</h1>
+<p>我的第一个表达式 {{5+5}}</p>
+<p>姓名为 {{name}}</p>
+<p>姓名为:<span data-ng-bind="firstname"></span></p>
+<form action="">
+<fieldset>
+<legend>尝试修改一下表单</legend>
+<p>名：<input type="" ng-model="firstname"/> </p>
+<p>姓：<input type="" ng-model="lastname"/></p>
+<p>姓名：{{firstname+" "+lastname}}</p>
+<p>姓名(ng-bind)：<span ng-bind="firstname+' '+lastname"></span></p>
+</fieldset>
+</form>
+<p>简单的表达式：{{num*price}}</p>
+<p>简单的表达式(ng-bind)：<span ng-bind="num*price"></span></p>
+<p>带有对象的表达式：{{flower.color}}</p>
+<p>带有对象的表达式(ng-bind)：<span ng-bind="flower.Class"></span> </p>
+<p>带有数组的表达式：{{nums[2]}}</p>
+<p>带有数组的表达式{ng-bind}：<span ng-bind="nums[0]"></span></p>
+<form action="">
+<fieldset>
+<legend>ng-model指令：价格计算器</legend>
+数量：<input type="text" ng-model="num"/> 
+价格： <input type="text" ng-model="price"/>
+<br />
+<b>总价：{{num*price}}</b>
+</fieldset>
+</form>
+
+<p>使用ng-repeat来循环数组</p>
+<ol>
+<li ng-repeat="x in names">{{x}}</li>
+</ol>
+<p>循环对象</p>
+<ol>
+<li ng-repeat="x in person">{{x.firstname+', '+x.lastname}}</li>
+</ol>
+
+<form action="">
+<fieldset>
+<legend>控制器函数</legend>
+<p>类别：<input type="text"  ng-model="flower.Class"/></p>
+<p>颜色：<input type="text" ng-model="flower.color"/></p>
+<p>花朵：{{bossom()}}</p>
+</fieldset>
+</form>
+<p>uppercase:{{ name | uppercase }}</p>
+<p>lowercase:{{ name | lowercase }}</p>
+<p>currency:{{ 234 | currency}}</p>
+<p>currency:{{ 234 | currency:"￥" }}</p>
+<p>orderBy:</p>
+<ol>
+<li ng-repeat="x in nums | orderBy">{{x}}</li>
+</ol>
+<form action="">
+<fieldset>
+<legend>输入过滤器</legend>
+<input type="text" ng-model="test"/><br />
+<ol>
+<li ng-repeat="x in person | filter:test | orderBy:'firstname'">
+{{(x.firstname | uppercase) +', '+x.lastname}}</li>
+</ol>
+</fieldset>
+</form>
+<h3>XMLHttpRequest</h3>
+<table>
+<caption>显示一个简单表格</caption>
+<tr>
+<th>名</th>
+<th>姓</th>
+</tr>
+<tr ng-repeat="x in person">
+<td>{{x.firstname}}</td>
+<td>{{x.lastname}}</td>
+</tr>
+</table>
+<table>
+<caption>表格排序</caption>
+<tr>
+<th>名</th>
+<th>姓</th>
+</tr>
+<tr ng-repeat="x in person | orderBy:'firstname'">
+<td>{{x.firstname}}</td>
+<td>{{x.lastname | uppercase}}</td>
+</tr>
+</table>
+</table>
+<table>
+<caption>带有序号的表格($index)</caption>
+<tr>
+<th>序号</th>
+<th>名</th>
+<th>姓</th>
+</tr>
+<tr ng-repeat="x in person">
+<td>{{$index+1}}</td>
+<td>{{x.firstname}}</td>
+<td>{{x.lastname}}</td>
+</tr>
+</table>
+<table>
+<caption>使用$even和$odd的表格(ng-if)</caption>
+<tr>
+<th>序号</th>
+<th>名</th>
+<th>姓</th>
+</tr>
+<tr ng-repeat="x in person">
+<td ng-if="$odd" style="background-color:darkcyan">{{$index+1}}</td>
+<td ng-if="$even">{{$index+1}}</td>
+<td ng-if="$odd" style="background-color:darkcyan">{{x.firstname}}</td>
+<td ng-if="$even">{{x.firstname}}</td>
+<td ng-if="$odd" style="background-color:darkcyan">{{x.lastname}}</td>
+<td ng-if="$even">{{x.lastname}}</td>
+</tr>
+</table>
+<h3>从数据库中读取数据</h3>
+<p>ng-disabled: <button ng-disabled="true">禁止</button></p>
+<form action="">
+<fieldset>
+<legend>ng-click;ng-hide/ng-show</legend>
+<button ng-click="toggle()">隐藏、显示</button>
+<div ng-hide="myVar">
+<p>名：<input type="text" ng-model="firstname"/></p>
+<p>姓：<input type="text" ng-model="lastname"/></p>
+<p>姓名：{{firstname+' '+lastname}}</p>
+</div>
+</fieldset>
+</form>
+<h3>模块</h3>
+<form action="">
+<fieldset>
+<legend>表单</legend>
+Class: <input type="" ng-model="user.Class"/><br />
+color: <input type="" ng-model="user.color"/><br />
+<button ng-click="copy()">RESET</button>
+<p>form={{user}}</p>
+<p>master={{flower}}</p>
+</fieldset>
+</form>
+<form action="" name="myForm">
+<fieldset>
+<legend>表单验证</legend>
+<p>用户名：<input type="text" name="userName" ng-model="userName" required/>
+<span  style="color:red" 
+ng-show="myForm.userName.$dirty && myForm.userName.$invalid">
+<span ng-show="myForm.userName.$error.required">用户名是必须的</span>
+</span>
+</p>
+<p>邮箱：<input type="email"  name="userEmail" ng-model="userEmail" required/>
+<span style="color:red"
+ng-show="myForm.userEmail.$dirty && myForm.userEmail.$invalid"
+>
+<span ng-show="myForm.userEmail.$error.required">邮箱名是必需的</span>
+<span ng-show="myForm.userEmail.$error.email">不合法邮箱地址</span>
+</span>
+</p>
+<p><button ng-disabled="myForm.userName.$dirty && myForm.userEmail.$invalid ||
+myForm.userEmail.$dirty && myForm.userEmail.$invalid">
+提交</button></p>
+</fieldset>
+</form>
+<p>{{name}}</p>
+<p>angular.lowercase():{{x2}}</p>
+<p>angular.uppercase():{{x3}}</p>
+<p>angular.isString():{{x4}}</p>
+<p>angular.isNumber():{{x5}}</p>
+<h3>Bootstrap</h3>
+
+
+<div class="book">
+<p class="note">笔记应用</p>
+<textarea name="" id="" cols="70" rows="12" 
+ng-model="message"
+>
+
+</textarea> <br />
+<button ng-click="save()">保存</button>
+<button ng-click="clear()">清除</button>
+<p>剩余字数：<span ng-bind="left()"></span></p>
+<p>{{context}}</p>
+</div>
+<p>备忘录</p>
+<input type="text" placeholder="新增"  ng-model="todoText"/> 
+<button ng-click="add()">新增</button>
+<br />
+<ul>
+<li ng-repeat="x in todoList">
+<input type="checkbox"  ng-model="x.done"/>{{x.text}}</li>
+</ul>
+<button ng-click="delete()">删除记录</button>
+
+<p>界面较好的备忘录</p>
+<p><input type="text"  ng-model="todotext" placeholder="add.." 
+class="listInput"/> 
+<button ng-click="addList()" class="listButton">Add</button></p>
+
+<ul class="list">
+<li ng-repeat="x in todolist" > 
+<input type="checkbox" ng-model="x.done"/>{{x.text}}
+<span ng-click="removeList()" class="listSpan">X</span>
+</li>
+</ul>
+
+
+
+
+
+
+<!--END-->
+</div>
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+<!--right end!!-->
+</div>
+
+</div>
+
+<div class="footer" style="clear:both">
+the author is Xianxian Wang.
+</div>
+
+</body>
+</html>
